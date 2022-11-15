@@ -233,7 +233,7 @@ var odd = new float[6];
 var even = new float[6];
 for (int i = 0; i < fare.Length; i++)
 {
-    if(fare[i]%2==0)
+    if (fare[i] % 2 == 0)
     {
         even[i] = fare[i];
 
@@ -266,4 +266,30 @@ for (int i = 0; i < even.Length; i++)
     {
         Console.WriteLine(even[i]);
     }
+}
+
+DateOnly dob;
+Console.WriteLine("Enter the date of birth");
+dob=DateOnly.Parse(Console.ReadLine());
+var today = DateTime.Today;
+var age=today.Year-dob.Year;
+Console.WriteLine("Age:" +age);
+var days = age * 365;
+Console.WriteLine("Days:" + days);
+var hr = days * 24;
+Console.WriteLine("Hours:" + hr);
+var week = days / 7;
+Console.WriteLine("Weeks:" + week);
+var month=days / 20;
+Console.WriteLine("Months:" + month);
+
+var year = dob.Year;
+if ((year % 4 == 0 && year % 100 == 0) || (year % 400 == 0))
+{
+    Console.WriteLine($"The year {year} is leap year");
+}
+else
+{
+    Console.WriteLine($"The year {year} is not a leap year");
+
 }
