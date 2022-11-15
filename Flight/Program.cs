@@ -224,11 +224,6 @@
 //********QUESTION 5 ********
 
 var fare = new float[6];
-Console.WriteLine("-----------------------");
-for (int i = 0; i < fare.Length; i++)
-{
-    Console.WriteLine(fare[i]);
-}
 Console.WriteLine("Enter the fare");
 for (int i = 0; i < fare.Length; i++)
 {
