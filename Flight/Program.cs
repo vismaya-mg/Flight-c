@@ -103,36 +103,122 @@
 
 
 //***************QUESTION 2************
-double fare;
-Console.WriteLine("Enter the flight fare");
-fare = double.Parse(Console.ReadLine());
-int time;
-Console.WriteLine("Enter the time");
-time= int.Parse(Console.ReadLine());
-if(time>=600 && time<=900)
-{
-    fare = fare + (fare * .1);
-    Console.WriteLine("Your fare is" +fare);
-}
-else if (time >= 900 && time <= 1700)
-{
-    fare = fare + (fare * .2);
-    Console.WriteLine("Your fare is" + fare);
-}
-else if (time >= 1700 && time <= 2300)
-{
-    fare = fare + (fare * .07);
-    Console.WriteLine("Your fare is" + fare);
-}
-else if (time <= 2300 && time <= 600)
-{
-    fare = fare + (fare * .05);
-    Console.WriteLine("Your fare is" + fare);
-}
-else
-{
+//double fare;
+//Console.WriteLine("Enter the flight fare");
+//fare = double.Parse(Console.ReadLine());
+//int time;
+//Console.WriteLine("Enter the time");
+//time= int.Parse(Console.ReadLine());
+//if(time>=600 && time<=900)
+//{
+//    fare = fare + (fare * .1);
+//    Console.WriteLine("Your fare is" +fare);
+//}
+//else if (time >= 900 && time <= 1700)
+//{
+//    fare = fare + (fare * .2);
+//    Console.WriteLine("Your fare is" + fare);
+//}
+//else if (time >= 1700 && time <= 2300)
+//{
+//    fare = fare + (fare * .07);
+//    Console.WriteLine("Your fare is" + fare);
+//}
+//else if (time <= 2300 && time <= 600)
+//{
+//    fare = fare + (fare * .05);
+//    Console.WriteLine("Your fare is" + fare);
+//}
+//else
+//{
 
-        Console.WriteLine("Invalid time");
-    
-}
+//        Console.WriteLine("Invalid time");
+
+//}
+
+//********QUESTION 3********
+
+
+//var fare= new float[5];
+//float temp = 0;
+//Console.WriteLine("Enter the fare");
+//for (int i = 0; i < fare.Length; i++)
+//{
+//    fare[i] = float.Parse(Console.ReadLine());
+//}
+
+//Console.WriteLine("Ascending order");
+//for (int i = 0; i < fare.Length; i++)
+//{
+//    for (int j = i + 1; j < fare.Length; j++)
+//    {
+//        if (fare[i] < fare[j])
+//        {
+//            temp = fare[i];
+//            fare[i] = fare[j];
+//            fare[j] = temp;
+//        }
+//    }
+//}
+//for (int j = 0; j < fare.Length; j++)
+//{
+//    Console.WriteLine(fare[j]);
+//}
+//Console.WriteLine("Descending order");
+//for (int i = 0; i < fare.Length; i++)
+//{
+//    for (int j = i + 1; j < fare.Length; j++)
+//    {
+//        if (fare[i] > fare[j])
+//        {
+//            temp = fare[i];
+//            fare[i] = fare[j];
+//            fare[j] = temp;
+//        }
+//    }
+//}
+//for (int j = 0; j < fare.Length; j++)
+//{
+//    Console.WriteLine(fare[j]);
+//}
+
+//float Sfare;
+//Console.WriteLine("Enter the name to be searched");
+//Sfare = float.Parse(Console.ReadLine());
+//for (int i = 0; i < fare.Length; i++)
+//{
+//    if (Sfare == fare[i])
+//    {
+//        Console.WriteLine($"{Sfare} is present in this array");
+//    }
+//}
+
+//float max = fare[0];
+//float min = 0;
+//for (int i = 1; i < fare.Length; i++)
+//{
+//    if(fare[i] > max)
+//    {
+//        max = fare[i];
+//    }
+//    else
+//    {
+//        min=fare[i];
+//    }
+//}
+//Console.WriteLine("The maximum fare is " + max);
+//Console.WriteLine("The minimum fare is " + min);
+
+//Console.WriteLine("Duplicate fares");
+//for (int i = 0; i < fare.Length-1; i++)
+//{
+//    for (int j = i+1; j < fare.Length; j++)
+//    {
+//        if (fare[i] == fare[j])
+//        {
+//            Console.WriteLine(fare[i]);
+//            break;
+//        }
+//    }
+//}
 
