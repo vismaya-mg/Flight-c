@@ -223,73 +223,135 @@
 //}
 //********QUESTION 5 ********
 
-var fare = new float[6];
-Console.WriteLine("Enter the fare");
-for (int i = 0; i < fare.Length; i++)
-{
-    fare[i] = float.Parse(Console.ReadLine());
-}
-var odd = new float[6];
-var even = new float[6];
-for (int i = 0; i < fare.Length; i++)
-{
-    if (fare[i] % 2 == 0)
-    {
-        even[i] = fare[i];
+//var fare = new float[6];
+//Console.WriteLine("Enter the fare");
+//for (int i = 0; i < fare.Length; i++)
+//{
+//    fare[i] = float.Parse(Console.ReadLine());
+//}
+//var odd = new float[6];
+//var even = new float[6];
+//for (int i = 0; i < fare.Length; i++)
+//{
+//    if (fare[i] % 2 == 0)
+//    {
+//        even[i] = fare[i];
 
-    }
-    else
-    {
-        odd[i] = fare[i];
-    }
-}
-Console.WriteLine("Odd values");
-for (int i = 0; i < odd.Length; i++)
-{
-    if (odd[i] == 0)
-    {
-        continue;
-    }
-    else
-    {
-        Console.WriteLine(odd[i]);
-    }
-}
-Console.WriteLine("even values");
-for (int i = 0; i < even.Length; i++)
-{
-    if (even[i] == 0)
-    {
-        continue;
-    }
-    else
-    {
-        Console.WriteLine(even[i]);
-    }
-}
+//    }
+//    else
+//    {
+//        odd[i] = fare[i];
+//    }
+//}
+//Console.WriteLine("Odd values");
+//for (int i = 0; i < odd.Length; i++)
+//{
+//    if (odd[i] == 0)
+//    {
+//        continue;
+//    }
+//    else
+//    {
+//        Console.WriteLine(odd[i]);
+//    }
+//}
+//Console.WriteLine("even values");
+//for (int i = 0; i < even.Length; i++)
+//{
+//    if (even[i] == 0)
+//    {
+//        continue;
+//    }
+//    else
+//    {
+//        Console.WriteLine(even[i]);
+//    }
+//}
+//******QUSETION 4********
+//DateOnly dob;
+//Console.WriteLine("Enter the date of birth");
+//dob=DateOnly.Parse(Console.ReadLine());
+//var today = DateTime.Today;
+//var age=today.Year-dob.Year;
+//Console.WriteLine("Age:" +age);
+//var days = age * 365;
+//Console.WriteLine("Days:" + days);
+//var hr = days * 24;
+//Console.WriteLine("Hours:" + hr);
+//var week = days / 7;
+//Console.WriteLine("Weeks:" + week);
+//var month=days / 20;
+//Console.WriteLine("Months:" + month);
 
-DateOnly dob;
-Console.WriteLine("Enter the date of birth");
-dob=DateOnly.Parse(Console.ReadLine());
-var today = DateTime.Today;
-var age=today.Year-dob.Year;
-Console.WriteLine("Age:" +age);
-var days = age * 365;
-Console.WriteLine("Days:" + days);
-var hr = days * 24;
-Console.WriteLine("Hours:" + hr);
-var week = days / 7;
-Console.WriteLine("Weeks:" + week);
-var month=days / 20;
-Console.WriteLine("Months:" + month);
+//var year = dob.Year;
+//if ((year % 4 == 0 && year % 100 == 0) || (year % 400 == 0))
+//{
+//    Console.WriteLine($"The year {year} is leap year");
+//}
+//else
+//{
+//    Console.WriteLine($"The year {year} is not a leap year");
 
-var year = dob.Year;
-if ((year % 4 == 0 && year % 100 == 0) || (year % 400 == 0))
+//}
+
+//*************QUSETION 9***********
+
+//var dob = new DateOnly[10];
+//Console.WriteLine("Enter the date of births");
+//for (int i = 0; i <dob.Length; i++)
+//{
+//    dob[i] = DateOnly.Parse(Console.ReadLine());
+//}
+//var today = DateTime.Today;
+//var age=new int[10];
+//for (int i = 0; i < dob.Length; i++)
+//{
+//    age[i] = today.Year - dob[i].Year;
+//}
+//for (int i = 0; i < dob.Length; i++)
+//{
+//    if (age[i]<10)
+//    {
+//        Console.WriteLine($"The person in the dob {dob[i]} is Kid");
+//    }
+//    else if(age[i]>10 && age[i]<30)
+//    {
+//        Console.WriteLine($"The person in the dob {dob[i]} is Youth");
+//    }
+//    else if (age[i] > 30 && age[i] < 60)
+//    {
+//        Console.WriteLine($"The person in the dob {dob[i]} is Adult");
+//    }
+//    else
+//    {
+//        Console.WriteLine($"The person in the dob {dob[i]} is Older");
+//    }    
+//}
+
+//********QUESTION 12 ********
+var Pname = new String[3];
+var dest=new String[3];
+var concat=new String[3];
+Console.WriteLine("Enter the names");
+for (int i = 0; i < Pname.Length; i++)
 {
-    Console.WriteLine($"The year {year} is leap year");
+    Pname[i] = Console.ReadLine();
 }
-else
+Console.WriteLine("Enter the destination");
+for (int i = 0; i < dest.Length; i++)
 {
-    Console.WriteLine($"The year {year} is not a leap year");
-
+    dest[i] = Console.ReadLine();
+}
+Console.WriteLine("The merged list");
+for (int i = 0; i < Pname.Length; i++)
+{
+    for (int j = 0; j < i+1; j++)
+    {
+        concat[i]= Pname[i] +" " + dest[j];
+        
+    }
+}
+for (int i = 0; i < concat.Length; i++)
+{
+    Console.WriteLine(concat[i]);
 }
