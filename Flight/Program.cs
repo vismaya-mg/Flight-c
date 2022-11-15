@@ -221,4 +221,54 @@
 //        }
 //    }
 //}
+//********QUESTION 5 ********
 
+var fare = new float[6];
+Console.WriteLine("-----------------------");
+for (int i = 0; i < fare.Length; i++)
+{
+    Console.WriteLine(fare[i]);
+}
+Console.WriteLine("Enter the fare");
+for (int i = 0; i < fare.Length; i++)
+{
+    fare[i] = float.Parse(Console.ReadLine());
+}
+var odd = new float[6];
+var even = new float[6];
+for (int i = 0; i < fare.Length; i++)
+{
+    if(fare[i]%2==0)
+    {
+        even[i] = fare[i];
+
+    }
+    else
+    {
+        odd[i] = fare[i];
+    }
+}
+Console.WriteLine("Odd values");
+for (int i = 0; i < odd.Length; i++)
+{
+    if (odd[i] == 0)
+    {
+        continue;
+    }
+    else
+    {
+        Console.WriteLine(odd[i]);
+    }
+}
+Console.WriteLine("even values");
+for (int i = 0; i < even.Length; i++)
+{
+    if (even[i] == 0)
+    {
+        continue;
+    }
+    else
+    {
+        Console.WriteLine(even[i]);
+    }
+}
